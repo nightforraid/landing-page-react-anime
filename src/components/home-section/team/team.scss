@@ -1,0 +1,30 @@
+@use "../../../scss/" as *;
+
+.team {
+    &__content {
+        @include flex(center, center);
+    }
+
+    &__info,
+    &__img {
+        width: 50%;
+        height: 100%;
+    }
+
+    &__info {
+        @include flex(flex-start, flex-end);
+
+        &__content {
+           text-align: center;
+
+            .description {
+                font-size: 16px;
+                font-weight: 100;
+            }
+        }
+    }
+}
+
+.icon{
+        width: 20%;
+}
